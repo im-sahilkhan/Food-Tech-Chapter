@@ -1,0 +1,115 @@
+/* Chapter Coordinator Styles */
+.coordinator-section {
+  margin-bottom: 24px;
+}
+
+.coordinator-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coordinator-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.coordinator-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.coordinator-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.coordinator-role {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.coordinator-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Dark Mode Styles */
+.dark-mode .coordinator-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dark-mode .coordinator-title,
+.dark-mode .coordinator-name {
+  color: var(--text-primary);
+}
+
+.dark-mode .coordinator-role {
+  color: var(--accent-color);
+}
+
+.dark-mode .coordinator-description {
+  color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coordinator-card {
+    padding: 20px;
+  }
+
+  .coordinator-title {
+    font-size: 1.6rem;
+  }
+
+  .coordinator-name {
+    font-size: 1.2rem;
+  }
+
+  .coordinator-role {
+    font-size: 0.9rem;
+  }
+
+  .coordinator-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .coordinator-card {
+    padding: 16px;
+  }
+
+  .coordinator-title {
+    font-size: 1.4rem;
+  }
+
+  .coordinator-name {
+    font-size: 1.1rem;
+  }
+
+  .coordinator-role {
+    font-size: 0.85rem;
+  }
+
+  .coordinator-description {
+    font-size: 0.9rem;
+  }
+} 
