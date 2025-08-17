@@ -578,3 +578,23 @@ body.dark-mode {
 #contact {
   scroll-margin-top: 80px;
 }
+
+.rainbow-text {
+  background: linear-gradient(
+      45deg,
+      #0080ff,#0000ff, 
+      #8000ff, #ff00ff, #ff0080,#ff0000
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-move 3s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes rainbow-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

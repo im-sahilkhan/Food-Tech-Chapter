@@ -1,8 +1,7 @@
 import React from 'react';
-import lead1 from '../../assets/atif.jpeg';
-import lead2 from '../../assets/shadab.jpg';
-import captain1 from '../../assets/atif.jpeg';
-import captain2 from '../../assets/shadab.jpg';
+import lead1 from '../../assets/rashid_ahmad.jpg';
+import lead2 from '../../assets/sadaf_ahmad.png';
+import captain1 from '../../assets/sahil_khan.jpg';
 
 const Team = () => {
   const leads = [
