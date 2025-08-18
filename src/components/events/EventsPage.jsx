@@ -1,56 +1,45 @@
 import React from 'react';
 import './EventsPage.css';
 import event1 from '../../assets/cs_workshop.jpg';
-import event1_speaker1 from '../../assets/shadab.jpg';
-import event1_speaker2 from '../../assets/atif.jpeg';
 import event2 from '../../assets/cs_workshop.jpg';
-import event2_speaker1 from '../../assets/shadab.jpg';
 
 const EventsPage = () => {
   const events = [
     {
       id: 1,
-      title: "Cybersecurity Workshop: Ethical Hacking Fundamentals",
-      date: "March 15, 2025",
-      time: "10:00 AM - 4:00 PM",
-      location: "Jamia Hamdard University, Room 301",
-      category: "Workshop",
+      title: "Webinar on Trends in Food Processing",
+      date: "August 19, 2025",
+      time: "2:00 PM - 4:00 PM",
+      location: "Online (Zoom)",
+      category: "Webinar",
       status: "Upcoming",
       image: event1,
-      description: "Learn the fundamentals of ethical hacking through hands-on workshops covering penetration testing, vulnerability assessment, and security best practices.",
-      speakers: [
-        {
-          name: "Dr. Rajesh Kumar",
-          title: "Senior Security Consultant",
-          company: "CyberSec Solutions",
-          image: event1_speaker1,
-        },
-        {
-          name: "Priya Sharma",
-          title: "Penetration Tester",
-          company: "SecureNet Technologies",
-          image: event1_speaker2,
-        }
-      ]
+      description: "Explore the latest advancements and automation in food processing technologies. Learn about cutting-edge innovations and industry best practices.",
+      registerUrl: "https://forms.google.com/example1"
     },
     {
       id: 2,
-      title: "Capture The Flag (CTF) Competition",
-      date: "March 22, 2025",
-      time: "9:00 AM - 6:00 PM",
-      location: "Jamia Hamdard University, Computer Lab",
-      category: "Competition",
+      title: "GATE XE – FT Prep Session: Strategy & Tips",
+      date: "July 19, 2025",
+      time: "10:00 AM - 12:00 PM",
+      location: "Online (Google Meet)",
+      category: "Online Session",
       status: "Registration Open",
       image: event2,
-      description: "Test your cybersecurity skills in our annual CTF competition! Solve challenges across web security, cryptography, forensics, and reverse engineering.",
-      speakers: [
-        {
-          name: "Amit Patel",
-          title: "CTF Organizer",
-          company: "Jamia Hamdard Chapter",
-          image: event2_speaker1
-        }
-      ]
+      description: "Learn how to prepare smartly for GATE Food Tech with top scorers and mentors. Get expert tips and strategies for success.",
+      registerUrl: "https://forms.google.com/example2"
+    },
+    {
+      id: 3,
+      title: "Internship Talk with Industry Experts",
+      date: "July 19, 2025",
+      time: "3:00 PM - 5:00 PM",
+      location: "Jamia Hamdard University, Room 201",
+      category: "Career Session",
+      status: "Registration Open",
+      image: event1,
+      description: "Connect with industry professionals and learn about internship opportunities in food technology. Get insights into career paths and industry requirements.",
+      registerUrl: "https://forms.google.com/example3"
     }
   ];
 
@@ -69,20 +58,33 @@ const EventsPage = () => {
 
   const getCategoryColor = (category) => {
     switch (category) {
-      case 'Workshop':
+      case 'Webinar':
         return '#4F46E5';
-      case 'Competition':
+      case 'Online Session':
         return '#DC2626';
-      case 'Panel Discussion':
+      case 'Career Session':
         return '#059669';
-      case 'Training':
+      case 'Workshop':
         return '#EA580C';
-      case 'Career Fair':
+      case 'Competition':
         return '#BE185D';
       default:
         return '#6B7280';
     }
   };
+
+  // Scroll to the event if a hash is present
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash) {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+  }, []);
 
   return (
     <div className="events-page-container">
@@ -91,10 +93,10 @@ const EventsPage = () => {
         <div className="events-hero-content">
           <h1 className="events-title">Events & Activities</h1>
           <p className="events-subtitle">
-            Join us for exciting cybersecurity events, workshops, competitions, and networking opportunities.
+            Join us for exciting food technology events, workshops, and networking opportunities.
           </p>
           <p className="events-description">
-            Stay updated with the latest in cybersecurity through our diverse range of events designed 
+            Stay updated with the latest in food technology through our diverse range of events designed 
             to enhance your skills, expand your network, and advance your career in the field.
           </p>
         </div>
@@ -108,7 +110,7 @@ const EventsPage = () => {
 
         <div className="events-grid">
           {events.map((event) => (
-            <div key={event.id} className="event-card">
+            <div key={event.id} id={`event-${event.id}`} className="event-card">
               <div className="event-image">
                 <img src={event.image} alt={event.title} />
                 <div className="event-status" style={{ backgroundColor: getStatusColor(event.status) }}>
@@ -140,24 +142,15 @@ const EventsPage = () => {
 
                 <p className="event-description">{event.description}</p>
 
-                <div className="event-details">
-                  <div className="detail-section">
-                    <h4>Speakers</h4>
-                    <div className="speakers-grid">
-                      {event.speakers.map((speaker, index) => (
-                        <div key={index} className="speaker-card">
-                          <div className="speaker-image">
-                            <img src={speaker.image} alt={speaker.name} />
-                          </div>
-                          <div className="speaker-info">
-                            <h5>{speaker.name}</h5>
-                            <p>{speaker.title}</p>
-                            <p className="speaker-company">{speaker.company}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                <div className="event-actions">
+                  <a 
+                    href={event.registerUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="register-btn"
+                  >
+                    Register Here
+                  </a>
                 </div>
               </div>
             </div>

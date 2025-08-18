@@ -10,6 +10,7 @@ import ContactPage from './components/contact/ContactPage';
 import ChapterCoordinator from './components/coordinator/ChapterCoordinator';
 import Events from './components/events/Events';
 import EventsPage from './components/events/EventsPage';
+import GatePage from './components/gate/GatePage';
 import Footer from './components/footer/Footer';
 import './components/navbar/Navbar.css';
 import './index.css';
@@ -50,6 +51,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/gate" element={<GatePage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

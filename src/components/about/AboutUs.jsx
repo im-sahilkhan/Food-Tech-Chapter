@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import './AboutUs.css';
-import team1 from '../../assets/atif.jpeg';
-import team2 from '../../assets/shadab.jpg';
-import team3 from '../../assets/atif.jpeg';
-import team4 from '../../assets/shadab.jpg';
-import team5 from '../../assets/atif.jpeg';
-import team6 from '../../assets/shadab.jpg';
+import team1 from '../../assets/mohd_danish.jpg';
+import team2 from '../../assets/rashid_ahmad.jpg';
+import team3 from '../../assets/sadaf_ahmad.png';
+import team4 from '../../assets/sahil_khan.jpg';
 
 
 const AboutUs = () => {

@@ -30,6 +30,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Events', path: '/events' },
+    { name: 'GATE', path: '/gate' },
     { name: 'Contact', path: '/contact' },
     { name: 'Team', path: '/about#team' },
   ];
@@ -79,6 +80,12 @@ const Navbar = () => {
           teamSection.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
+    } else if (path === '/gate') {
+      // Navigate to gate page and scroll to top
+      navigate('/gate');
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
     } else if (path.startsWith('/#')) {
       // Handle hash links on current page
       const element = document.querySelector(path);
@@ -99,7 +106,7 @@ const Navbar = () => {
       <ul className={`navbar-menu ${menuOpen ? 'active' : ''}`}>
         {menuItems.map((item) => (
           <li key={item.name} className="navbar-menu-item">
-            {item.path.startsWith('/#') || item.path === '/about#team' || item.path === '/' || item.path === '/about' || item.path === '/events' || item.path === '/contact' ? (
+            {item.path.startsWith('/#') || item.path === '/about#team' || item.path === '/' || item.path === '/about' || item.path === '/events' || item.path === '/contact' || item.path === '/gate' ? (
               <a
                 href={item.path}
                 onClick={(e) => {

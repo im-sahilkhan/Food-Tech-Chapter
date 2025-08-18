@@ -13,6 +13,9 @@ const ContactPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  // Set the recipient email here
+  const recipientEmail = 'riakhan.fst@amu.ac.in';
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -24,21 +27,20 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }, 1500);
+
+    const { name, email, subject, message } = formData;
+
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Redirect to the user's email client with prefilled details
+    window.location.href = mailtoLink;
+
+    // Optimistically reset the form state
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(false);
+    setSubmitStatus('success');
+    setTimeout(() => setSubmitStatus(null), 3000);
   };
 
   return (

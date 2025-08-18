@@ -9,14 +9,6 @@ const Footer = () => {
     { name: 'Blog', href: '#contact' }
   ];
 
-  const resourceLinks = [
-    { name: 'Tools', href: '#' },
-    { name: 'Archive', href: '#' },
-    { name: 'Join Us', href: '#' },
-    { name: 'Contact', href: '#contact' },
-    { name: 'Privacy Policy', href: '#' }
-  ];
-
   return (
     <footer className="footer">
       <div className="footer-card">
@@ -39,18 +31,10 @@ const Footer = () => {
                 <span>New Delhi, India</span>
               </div>
             </div>
-            <div className="social-icons">
-              <a href="#" className="social-icon-link">💼</a>
-              <a href="#" className="social-icon-link">🐦</a>
-              <a href="#" className="social-icon-link">📷</a>
-              <a href="#" className="social-icon-link">🎮</a>
-              <a href="#" className="social-icon-link">📺</a>
-              <a href="#" className="social-icon-link">📘</a>
-            </div>
           </div>
 
           {/* Navigation Section */}
-          <div className="footer-section">
+          <div className="footer-section" style={{ textAlign: 'center' }}>
             <h3 className="footer-title">Navigation</h3>
             <ul className="footer-links">
               {navigationLinks.map((link, index) => (
@@ -59,34 +43,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Resources Section */}
-          <div className="footer-section">
-            <h3 className="footer-title">Resources</h3>
-            <ul className="footer-links">
-              {resourceLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href}>{link.name}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Stay Connected Section */}
-          <div className="footer-section">
-            <h3 className="footer-title">Stay Connected</h3>
-            <p className="footer-description">
-              Subscribe to our newsletter for the latest updates on upcoming events, tools, and community news.
-            </p>
-            <div className="newsletter-form">
-              <input 
-                type="email" 
-                placeholder="youremail@example.com" 
-                className="newsletter-input"
-              />
-              <button className="newsletter-btn">→</button>
-            </div>
           </div>
         </div>
 
