@@ -259,6 +259,21 @@
   color: #6b7280;
 }
 
+.team-email {
+  font-size: 0.9rem;
+  color: #8b5cf6;
+  margin-top: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
 /* Dark Mode Styles */
 .dark-mode .about-us-container {
   background-color: #111827;
@@ -286,6 +301,12 @@
 .dark-mode .value-card p,
 .dark-mode .team-description {
   color: #d1d5db;
+}
+
+.dark-mode .team-email {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  border-color: rgba(167, 139, 250, 0.2);
 }
 
 .dark-mode .section-title {

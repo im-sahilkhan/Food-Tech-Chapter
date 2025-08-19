@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   const socialLinks = [
-    { icon: "📱", text: "Join WhatsApp Community", href: "#" },
-    { icon: "💼", text: "Join on LinkedIn", href: "#" },
-    { icon: "✉️", text: "Contact via Email", href: "#" }
+    { icon: "📱", text: "Join WhatsApp Community", href: "https://chat.whatsapp.com/LITgMHGuPdDE1ipAoIHhAK"},
+    { icon: "💼", text: "Join on LinkedIn", href: "https://www.linkedin.com/" },
+    { icon: "✉️", text: "Contact via Email", href: "mailto:riakhan.fst@amu.ac.in" }
   ];
 
   return (
@@ -12,7 +12,7 @@ const Contact = () => {
       <h2 className="section-title">Connect With Us</h2>
       <div className="social-links">
         {socialLinks.map((link, index) => (
-          <a key={index} href={link.href} className="social-link">
+          <a key={index} href={link.href} className="social-link" target="_blank">
             <span className="social-icon">{link.icon}</span>
             <span className="social-text">{link.text}</span>
             <span className="external-icon">↗</span>

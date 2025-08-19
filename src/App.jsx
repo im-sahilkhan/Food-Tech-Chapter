@@ -11,6 +11,7 @@ import ChapterCoordinator from './components/coordinator/ChapterCoordinator';
 import Events from './components/events/Events';
 import EventsPage from './components/events/EventsPage';
 import GatePage from './components/gate/GatePage';
+import PlacementPage from './components/placement/PlacementPage';
 import Footer from './components/footer/Footer';
 import './components/navbar/Navbar.css';
 import './index.css';
@@ -52,6 +53,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/gate" element={<GatePage />} />
+          <Route path="/placement" element={<PlacementPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

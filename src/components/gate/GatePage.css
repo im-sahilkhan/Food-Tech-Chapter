@@ -63,6 +63,7 @@
   align-items: center;
   box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
 }
 
 .notification-line:hover {
@@ -301,6 +302,122 @@
   font-size: 0.95rem;
 }
 
+/* NPTEL Section */
+.nptel-section {
+  margin-bottom: 4rem;
+}
+
+.nptel-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.nptel-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.nptel-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.nptel-table-container {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.nptel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.nptel-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nptel-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.nptel-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.nptel-table tr:hover {
+  background-color: #f1f5f9;
+}
+
+.nptel-table a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nptel-table a:hover {
+  color: #5a67d8;
+  text-decoration: underline;
+}
+
+/* Special row styling */
+.compulsory-row {
+  background-color: #fef3c7 !important;
+  border-left: 4px solid #f59e0b;
+}
+
+.compulsory-row:hover {
+  background-color: #fde68a !important;
+}
+
+.section-note {
+  display: block;
+  font-size: 0.9rem;
+  color: #92400e;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+.optional-header {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  border-left: 4px solid #64748b;
+}
+
+.optional-header td {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.highlighted-row {
+  background-color: #ecfdf5 !important;
+  border-left: 4px solid #10b981;
+}
+
+.highlighted-row:hover {
+  background-color: #d1fae5 !important;
+}
+
+.highlighted-row td:first-child {
+  color: #065f46;
+  font-weight: 600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .gate-page-container {
@@ -392,6 +509,24 @@
 
   .notification-text {
     font-size: 0.9rem;
+  }
+
+  .nptel-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .nptel-table-container {
+    overflow-x: auto;
+  }
+
+  .nptel-table {
+    font-size: 0.9rem;
+    min-width: 600px;
+  }
+
+  .nptel-table th,
+  .nptel-table td {
+    padding: 0.8rem 1rem;
   }
 
   .syllabus-header h2,

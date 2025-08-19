@@ -16,40 +16,28 @@ const Footer = () => {
           {/* 0x0 Pirates Section */}
           <div className="footer-section">
             <h3 className="footer-title">
-              <span className="accent-text">0x0</span> Pirates
+              <span className="accent-text">Food Tech Chapter</span> 
             </h3>
             <p className="footer-description">
-              A global network of cybersecurity enthusiasts, researchers, and educators united by a shared commitment to making security knowledge accessible to all.
+              A global network of food technology enthusiasts, researchers, and educators united by a shared commitment to making food technology knowledge accessible to all.
             </p>
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
-                <span>+91 8287664949</span>
+                <span>+91 8057740599</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
-                <span>New Delhi, India</span>
+                <span>Aligarh, India</span>
               </div>
             </div>
-          </div>
-
-          {/* Navigation Section */}
-          <div className="footer-section" style={{ textAlign: 'center' }}>
-            <h3 className="footer-title">Navigation</h3>
-            <ul className="footer-links">
-              {navigationLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href}>{link.name}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </div>         
         </div>
 
         {/* Copyright Section */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <span className="copyright">© 2025 0x0 Pirates | All rights reserved</span>
+            <span className="copyright">© 2025 Food Tech Chapter | All rights reserved</span>
           </div>
         </div>
       </div>

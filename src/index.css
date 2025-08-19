@@ -343,8 +343,6 @@ body.dark-mode .poster-title {
 .footer-content {
   text-align: center;
   padding: 40px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 40px;
 }
 

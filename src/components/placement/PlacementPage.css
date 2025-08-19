@@ -1,0 +1,594 @@
+/* Placement Page Styles */
+.placement-page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.placement-hero {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.placement-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.placement-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.placement-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.placement-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Internship Section */
+.internship-section {
+  margin-bottom: 4rem;
+}
+
+.internship-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.internship-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.internship-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.internship-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.internship-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.internship-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.internship-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.internship-content p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.internship-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.internship-features .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.internship-features .feature-icon {
+  font-size: 1.2rem;
+  min-width: 1.5rem;
+}
+
+.internship-actions {
+  padding: 0 2rem 2rem;
+  text-align: center;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+/* Placement Section */
+.placement-section {
+  margin-bottom: 4rem;
+}
+
+.placement-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.placement-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.placement-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Company Table Sections */
+.company-table-section {
+  margin-bottom: 3rem;
+}
+
+.company-table-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.table-container {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.company-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.company-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+.company-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.company-table tr:hover {
+  background-color: #f1f5f9;
+}
+
+.company-table a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.company-table a:hover {
+  color: #5a67d8;
+  background: rgba(102, 126, 234, 0.2);
+}
+
+/* Contact Section */
+.placement-contact {
+  margin-top: 4rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+}
+
+/* Alumni Section */
+.alumni-section {
+  margin-bottom: 4rem;
+}
+
+.alumni-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.alumni-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.alumni-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.alumni-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.alumni-content {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.alumni-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.alumni-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.alumni-content p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alumni-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.alumni-features .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.alumni-features .feature-icon {
+  font-size: 1.2rem;
+  min-width: 1.5rem;
+}
+
+.alumni-pdf-container {
+  padding: 2rem;
+}
+
+.alumni-pdf-container h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pdf-viewer {
+  background: #f8fafc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.pdf-viewer iframe {
+  display: block;
+  border: none;
+}
+
+.pdf-actions {
+  text-align: center;
+}
+
+.download-pdf-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.download-pdf-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.download-pdf-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .placement-page-container {
+    padding: 1rem;
+  }
+
+  .placement-title {
+    font-size: 2.2rem;
+  }
+
+  .placement-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .placement-hero {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .placement-hero-content {
+    padding: 0 1rem;
+  }
+
+  .internship-header h2,
+  .placement-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .internship-content {
+    padding: 1.5rem;
+  }
+
+  .internship-features {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .internship-actions {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .company-table-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .company-table {
+    font-size: 0.9rem;
+    min-width: 600px;
+  }
+
+  .company-table th,
+  .company-table td {
+    padding: 0.8rem 1rem;
+  }
+
+  .register-btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .alumni-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .alumni-content {
+    padding: 1.5rem;
+  }
+
+  .alumni-features {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .alumni-pdf-container {
+    padding: 1.5rem;
+  }
+
+  .pdf-viewer iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .placement-title {
+    font-size: 1.8rem;
+  }
+
+  .placement-subtitle {
+    font-size: 1rem;
+  }
+
+  .placement-description {
+    font-size: 0.9rem;
+  }
+
+  .internship-header h2,
+  .placement-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .internship-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .company-table-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .company-table {
+    font-size: 0.85rem;
+    min-width: 500px;
+  }
+
+  .company-table th,
+  .company-table td {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .register-btn {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .alumni-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .alumni-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .alumni-pdf-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .pdf-viewer iframe {
+    height: 300px;
+  }
+
+  .download-pdf-btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
